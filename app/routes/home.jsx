@@ -1,12 +1,19 @@
-import { Welcome } from "../welcome/welcome";
-
 export function meta() {
   return [
-    { title: "New React Router App" },
-    { name: "description", content: "Welcome to React Router!" },
+    { title: "FastPizza | Home" },
+    { name: "description", content: "Welcome to FastPizza!" },
   ];
 }
-
-export default function Home() {
-  return <Welcome />;
+function Home() {
+  return (
+    <div>
+      <h1>
+        The best pizza.
+        <br />
+        Straight out of the oven, straight to you.
+      </h1>
+    </div>
+  );
 }
+
+export default Home;
