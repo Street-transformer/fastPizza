@@ -1,3 +1,4 @@
+import CreateUser from "../features/user/CreateUser";
 export function meta() {
   return [
     { title: "FastPizza | Home" },
@@ -6,12 +7,15 @@ export function meta() {
 }
 function Home() {
   return (
-    <div>
-      <h1 className="text-xl text-yellow-500 font-bold text-center">
+    <div className="my-10 px-4 text-center sm:my-16">
+      <h1 className="mb-8 text-xl font-semibold md:text-3xl">
         The best pizza.
         <br />
-        Straight out of the oven, straight to you.
+        <span className="text-yellow-500">
+          Straight out of the oven, straight to you.
+        </span>
       </h1>
+      <CreateUser />
     </div>
   );
 }
