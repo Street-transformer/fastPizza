@@ -1,4 +1,4 @@
-import CreateOrder from "../features/order/CreateOrder";
+import CreateOrder, { clientAction } from "../features/order/CreateOrder";
 export function meta() {
   return [
     { title: "FastPizza | New Order" },
@@ -8,5 +8,6 @@ export function meta() {
 function CreateOrderRoute() {
   return <CreateOrder />;
 }
+export { clientAction };
 
 export default CreateOrderRoute;

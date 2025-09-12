@@ -1,4 +1,4 @@
-import Menu from "../features/menu/Menu";
+import Menu, { clientLoader } from "../features/menu/Menu";
 export function meta() {
   return [
     { title: "FastPizza | Menu" },
@@ -8,5 +8,6 @@ export function meta() {
 function MenuRoute() {
   return <Menu />;
 }
+export { clientLoader };
 
 export default MenuRoute;

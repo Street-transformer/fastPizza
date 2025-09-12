@@ -1,4 +1,5 @@
-body {
+@import "tailwindcss";
+/* body {
   font-family:
     system-ui,
     -apple-system,
@@ -13,14 +14,14 @@ body {
     sans-serif;
   background-color: #f7f7f7;
   color: #444;
-}
+} */
 
-.layout {
+/* .layout {
   display: grid;
   grid-template-rows: auto 1fr auto;
   gap: 32px;
   height: 100dvh;
-}
+} */
 
 /* https://dev.to/afif/i-made-100-css-loaders-for-your-next-project-4eje */
 .loader {
