@@ -1,10 +1,10 @@
-# Welcome to React Router!
+# Welcome to fastPizza!
 
-A modern, production-ready template for building full-stack React applications using React Router.
+A fast, production-ready Single Page Application (SPA) built with React Router.
 
 ## Features
 
-- 🚀 Server-side rendering
+- 🚀 Client-side SPA architecture
 - ⚡️ Hot Module Replacement (HMR)
 - 📦 Asset bundling and optimization
 - 🔄 Data loading and mutations
@@ -74,6 +74,15 @@ Make sure to deploy the output of `npm run build`
 │   ├── client/    # Static assets
 │   └── server/    # Server-side code
 ```
+
+### Static Site Deployment
+
+Since this is a client-side SPA, you can also deploy the contents of the build/client/ directory to any static hosting service:
+
+- Netlify
+- Vercel
+- GitHub Pages
+- Firebase Hosting
 
 ## Styling
 
