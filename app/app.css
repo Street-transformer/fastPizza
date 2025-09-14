@@ -20,6 +20,15 @@
     background-size: 20% 50%;
     animation: loading 1s infinite linear;
   }
+  .hide-scrollbar::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+  }
+
+  .hide-scrollbar {
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none; /* IE/Edge */
+  }
 
   @keyframes loading {
     20% {
