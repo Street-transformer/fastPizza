@@ -67,7 +67,7 @@ function Order() {
         {cart.map((item) => (
           <OrderItem
             item={item}
-            key={item.key}
+            key={item.pizzaId}
             isLoadingIngredients={fetcher.state === "loading"}
             ingredients={
               fetcher?.data?.find((el) => el.id === item.pizzaId)
