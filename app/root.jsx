@@ -10,6 +10,9 @@ import {
 
 import "./app.css";
 
+import { Provider } from "react-redux";
+import store from "./store";
+
 export const links = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
   {
@@ -46,7 +49,11 @@ export function Layout({ children }) {
 }
 
 export default function App() {
-  return <Outlet />;
+  return (
+    <Provider store={store}>
+      <Outlet />
+    </Provider>
+  );
 }
 
 export function ErrorBoundary({ error }) {
